@@ -26,8 +26,8 @@ gulp.task('styles', function() {
     .pipe(minifycss())
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('css/prod'))
-    .pipe(livereload())
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(livereload());
+    // .pipe(notify({ message: 'Styles task complete' }));
 });
 
 // Scripts
@@ -39,8 +39,8 @@ gulp.task('scripts', function() {
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('js/prod'))
-    .pipe(livereload())
-    .pipe(notify({ message: 'Scripts task complete' }));
+    .pipe(livereload());
+    // .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 // Images

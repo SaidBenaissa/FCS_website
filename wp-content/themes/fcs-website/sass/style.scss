@@ -1,22 +1,22 @@
+$black: #404041;
+$blue: #00ADFF;
+
 html,
 body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	div {
-		border-right: 2px;
-	}
 }
 
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
-    color: #404041;
+    color: $black;
 	font-size: 20px;
 	position: relative;
 }
 
 a {
-    color: #404041;
+    color: $black;
     text-decoration: none;
     transition: all 0.2s;
 }
@@ -26,12 +26,50 @@ a {
 }
 
 a:hover {
-    color: #00ADFF;
+    color: $blue;
     text-decoration: none;
 }
 
 img {
 	max-width: 100%;
+}
+
+.contact-form-wrap {
+	display: none;
+	padding: 20px 0;
+	text-align: center;
+	.contact-form {
+		display: inline-block;
+		input, textarea {
+			width: 100%;
+			border: 1px solid $blue;
+			box-sizing: border-box;
+		}
+		textarea {
+			height: 121px;
+		}
+		input {
+			&[type='text'], &[type='email'] {
+				height: 60px;
+				border-right: none;
+			}
+			&[type='submit'] {
+				height: 60px;
+				margin-top: -7px;
+			}
+		}
+		.forms-wrap-1 {
+			float: left;
+			span:not(:last-child) {
+				input {
+					border-bottom: none;
+				}
+			}
+		}
+		.forms-wrap-2 {
+			float: right;
+		}
+	}
 }
 
 header {

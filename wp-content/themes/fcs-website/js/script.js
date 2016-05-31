@@ -7,6 +7,10 @@ jQuery(document).ready(function($) {
 
   $('.page-content').has('ul.side-menu').addClass('with-side-menu');
 
+  $('#contact-us-btn').click(function() {
+    $('.contact-form-wrap').slideToggle('0.2');
+  });
+
   $('.menu-wrap li.menu-item-has-children').mouseenter(function() {
     $(this).children('ul.sub-menu').slideDown('0.2');
    }).mouseleave(function() {

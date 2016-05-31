@@ -3,9 +3,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100%; }
-  html div,
-  body div {
-    border-right: 2px; }
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -27,6 +24,31 @@ a:hover {
 
 img {
   max-width: 100%; }
+
+.contact-form-wrap {
+  display: none;
+  padding: 20px 0;
+  text-align: center; }
+  .contact-form-wrap .contact-form {
+    display: inline-block; }
+    .contact-form-wrap .contact-form input, .contact-form-wrap .contact-form textarea {
+      width: 100%;
+      border: 1px solid #00ADFF;
+      box-sizing: border-box; }
+    .contact-form-wrap .contact-form textarea {
+      height: 121px; }
+    .contact-form-wrap .contact-form input[type='text'], .contact-form-wrap .contact-form input[type='email'] {
+      height: 60px;
+      border-right: none; }
+    .contact-form-wrap .contact-form input[type='submit'] {
+      height: 60px;
+      margin-top: -7px; }
+    .contact-form-wrap .contact-form .forms-wrap-1 {
+      float: left; }
+      .contact-form-wrap .contact-form .forms-wrap-1 span:not(:last-child) input {
+        border-bottom: none; }
+    .contact-form-wrap .contact-form .forms-wrap-2 {
+      float: right; }
 
 header {
   margin-bottom: 20px;
