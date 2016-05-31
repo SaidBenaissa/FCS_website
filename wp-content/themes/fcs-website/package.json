@@ -1,0 +1,35 @@
+{
+  "name": "fcs-website",
+  "version": "1.0.0",
+  "description": "NaUKMA FCS WP Theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgrishajev/FCS_website.git"
+  },
+  "author": "Dominic Grishajev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgrishajev/FCS_website/issues"
+  },
+  "homepage": "http://fin.ukma.edu.ua/",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp.spritesmith": "^6.2.1",
+    "merge-stream": "^1.0.0",
+    "vinyl-buffer": "^1.0.0"
+  }
+}

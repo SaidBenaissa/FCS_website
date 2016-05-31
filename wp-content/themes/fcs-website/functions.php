@@ -31,9 +31,7 @@ add_action('wp_enqueue_scripts', 'fcs_theme_styles');
 
 function fcs_theme_js() {
 
-	wp_enqueue_script('masonry_js', get_template_directory_uri() . '/js/masonry.js', array('jquery'), '', true);
-	wp_enqueue_script('script_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '', true);
-	wp_enqueue_script('googlemap_js', 'https://maps.googleapis.com/maps/api/js', '', '', true);
+	wp_enqueue_script('script_js', get_template_directory_uri() . '/js/prod/main.min.js', array('jquery'), '', true);
 
 }
 
