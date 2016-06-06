@@ -164,7 +164,11 @@ footer {
 .menu-wrap-2:nth-child(2) ul.main-menu {
 	width: 82%;
 	margin-top: 4px;
+  padding-left: 10px;
   font-size: 16px;
+  li:first-child ul.sub-menu {
+    width: 130px;
+  }
 }
 
 .menu-wrap-2:nth-child(2) ul.main-menu>li {
@@ -202,25 +206,6 @@ footer {
 
 .menu-wrap-2:nth-child(2) li:hover:before {
 	color: #00ADFF;
-}
-
-/* hiding menu elements referring to the pages with no content */
-
-li#menu-item-399,
-li#menu-item-164,
-li#menu-item-415,
-li#menu-item-177,
-li#menu-item-53 ul.sub-menu,
-li#menu-item-463,
-li#menu-item-475,
-li#menu-item-474,
-li#menu-item-464,
-li#menu-item-465,
-li#menu-item-473,
-li#menu-item-466,
-li#menu-item-473,
-li#menu-item-476 {
-	display: none;
 }
 
 ul.main-menu {
