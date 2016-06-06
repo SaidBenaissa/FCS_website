@@ -1,6 +1,6 @@
 /*
 Flaticon icon font: Flaticon
-Creation date: 30/05/2016 18:38
+Creation date: 06/06/2016 14:16
 */
 @font-face {
   font-family: "Flaticon";
@@ -37,8 +37,11 @@ Creation date: 30/05/2016 18:38
 .flaticon-twitter-logo:before {
   content: "\f102"; }
 
-.flaticon-wikipedia-logo:before {
+.flaticon-up:before {
   content: "\f103"; }
 
-.flaticon-youtube-logotype:before {
+.flaticon-wikipedia-logo:before {
   content: "\f104"; }
+
+.flaticon-youtube-logotype:before {
+  content: "\f105"; }

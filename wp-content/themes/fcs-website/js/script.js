@@ -11,6 +11,13 @@ jQuery(document).ready(function($) {
     $('.contact-form-wrap').slideToggle('0.2');
   });
 
+  $('.up').click(function() {
+    $('html, body').animate({
+        scrollTop: $('body').offset().top
+    }, 500);
+    return false;    
+  });
+
   $('.menu-wrap li.menu-item-has-children').mouseenter(function() {
     $(this).children('ul.sub-menu').slideDown('0.2');
    }).mouseleave(function() {

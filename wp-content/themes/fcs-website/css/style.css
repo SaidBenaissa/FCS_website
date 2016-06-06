@@ -25,6 +25,9 @@ a:hover {
 img {
   max-width: 100%; }
 
+#contact-us-btn {
+  display: none; }
+
 .contact-form-wrap {
   display: none;
   padding: 20px 0;
@@ -58,6 +61,18 @@ header {
   z-index: 100;
   background: #F0FAFF;
   text-align: center; }
+
+.up {
+  position: fixed;
+  right: 20px;
+  font-size: 30px;
+  bottom: 10px;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  cursor: pointer;
+  z-index: 10; }
+  .up:hover {
+    opacity: 1; }
 
 footer {
   margin: 50px 0 -30px;
@@ -109,26 +124,30 @@ footer {
   font-weight: normal; }
 
 .menu-wrap-2:nth-child(2) ul.main-menu {
-  width: 76%;
-  margin-top: 4px; }
+  width: 82%;
+  margin-top: 4px;
+  font-size: 16px; }
 
 .menu-wrap-2:nth-child(2) ul.main-menu > li {
   position: relative;
   float: left;
-  margin-right: 1%; }
+  margin-right: 4px; }
 
 .menu-wrap-2 ul.main-menu > li.menu-item-has-children {
   height: 40px; }
 
 .menu-wrap-2:nth-child(2) ul.main-menu > li > a {
-  margin-left: 20px; }
+  margin-left: 7px; }
 
-.menu-wrap-2:nth-child(2) li:before {
+.menu-wrap-2:nth-child(2) ul.main-menu > li.menu-item-has-children > a {
+  margin-left: 16px; }
+
+.menu-wrap-2:nth-child(2) li.menu-item-has-children:before {
   content: '\f100';
   position: absolute;
-  top: 9px;
-  left: 3px;
-  font: 14px "Flaticon";
+  top: 6px;
+  left: 2px;
+  font: 12px Flaticon;
   transition: color 0.2s; }
 
 .menu-wrap-2 ul.main-menu > li:hover > a {
@@ -136,11 +155,6 @@ footer {
 
 .menu-wrap-2:nth-child(2) li:hover:before {
   color: #00ADFF; }
-
-.menu-wrap-2:nth-child(2) li:first-child:before,
-.menu-wrap-2:nth-child(2) li:last-child:before {
-  content: '';
-  background: none; }
 
 /* hiding menu elements referring to the pages with no content */
 li#menu-item-399,
@@ -539,7 +553,7 @@ body.single-new .page-content {
   height: 22px;
   float: left;
   padding: 0;
-  font: 20px "Flaticon";
+  font: 26px "Flaticon";
   transition: color 0.2s; }
 
 .icon:before {

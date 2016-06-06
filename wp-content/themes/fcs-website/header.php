@@ -21,21 +21,21 @@
 		
 				<?php
 		
-					$defaults = array(
-						'container' => false,
-						'theme_location' => 'header-top-menu',
-						'menu_class' => 'main-menu'
-					);
+					// $defaults = array(
+					// 	'container' => false,
+					// 	'theme_location' => 'header-top-menu',
+					// 	'menu_class' => 'main-menu'
+					// );
 		
-					wp_nav_menu($defaults);
+					// wp_nav_menu($defaults);
 
 				?>
 
 				<div class="social-wrap">
-					<a class="flaticon-facebook-app-logo icon icon-fb" href="https://www.facebook.com/mohylanka/"></a>
-					<a class="flaticon-twitter-logo icon icon-twitter" href="https://twitter.com"></a>
-					<a class="flaticon-youtube-logotype icon icon-youtube" href="https://www.youtube.com/channel/UC3znl1NwCry9LxDf0z-DVKA"></a>
-					<a class="flaticon-wikipedia-logo icon icon-wiki" href="https://uk.wikipedia.org/wiki/Національний_університет_«Києво-Могилянська_академія»"></a>
+					<a class="flaticon-facebook-app-logo fi icon icon-fb" href="https://www.facebook.com/mohylanka/"></a>
+					<a class="flaticon-twitter-logo fi icon icon-twitter" href="https://twitter.com"></a>
+					<a class="flaticon-youtube-logotype fi icon icon-youtube" href="https://www.youtube.com/channel/UC3znl1NwCry9LxDf0z-DVKA"></a>
+					<a class="flaticon-wikipedia-logo icon fi icon-wiki" href="https://uk.wikipedia.org/wiki/Національний_університет_«Києво-Могилянська_академія»"></a>
 				</div>
 
 				<?php echo get_search_form(); ?>
@@ -117,3 +117,5 @@
 		</div>
 		
 	</div>
+
+	<div class="up fi flaticon-up"></div>
