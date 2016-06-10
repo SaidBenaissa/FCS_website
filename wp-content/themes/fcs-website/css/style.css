@@ -357,6 +357,19 @@ body.page-template-archive-teacher .page-content p,
 body.page-template-archive-student .page-content p {
   margin: 0; }
 
+body.page-id-15 .people-block {
+  padding: 0;
+  width: 15%; }
+  body.page-id-15 .people-block a {
+    display: block;
+    padding: 5px;
+    font-size: 26px;
+    font-style: normal;
+    text-align: center; }
+    body.page-id-15 .people-block a:before {
+      display: block;
+      font-size: 120px; }
+
 .peoples-wrap {
   width: 100%; }
 
@@ -387,12 +400,6 @@ body.page-template-archive-student .page-content p {
 .student-block img {
   width: 100%;
   height: auto; }
-
-.people-block:hover a {
-  text-decoration: underline; }
-
-.people-block a:hover {
-  color: #404041; }
 
 .people-top-wrap img {
   width: 300px;
@@ -520,9 +527,11 @@ body.single-new .page-content {
   text-decoration: underline; }
 
 #googleMap {
-  width: 700px;
-  height: 216px;
-  float: right; }
+  position: absolute;
+  top: 140px;
+  right: 0px;
+  width: 80%;
+  height: 196px; }
 
 .social-wrap {
   display: inline-block;
@@ -580,9 +589,14 @@ body.single-new .page-content {
     border-right: none; } }
 
 @media (max-width: 1024px) {
+  body.page-template-page-contact .page-content .first-text {
+    margin-top: 280px; }
   #googleMap {
-    width: 100%;
-    margin: 20px auto 40px; } }
+    width: 100%; } }
+
+@media (min-width: 994px) {
+  .header-menus-mob-wrap {
+    display: none !important; } }
 
 @media (max-width: 994px) {
   header {
@@ -624,6 +638,20 @@ body.single-new .page-content {
     display: block; }
   .show-side-menu-btn.sunken {
     top: 8px; } }
+
+@media (max-width: 994px) {
+  .people-wrap {
+    text-align: center; }
+    .people-wrap .people-block {
+      width: 80%;
+      margin: 0 auto 20px;
+      float: none; }
+  body.page-id-15 .people-wrap {
+    text-align: center; }
+    body.page-id-15 .people-wrap .people-block {
+      width: 80%;
+      margin: 0 auto 20px;
+      float: none; } }
 
 @media (max-width: 620px) {
   footer {

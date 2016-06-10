@@ -23,13 +23,13 @@
 
 	<?php
 
-		$defaults = array(
-			'container' => false,
-			'theme_location' => 'people-page-side-menu',
-			'menu_class' => 'side-menu'
-		);
+		// $defaults = array(
+		// 	'container' => false,
+		// 	'theme_location' => 'people-page-side-menu',
+		// 	'menu_class' => 'side-menu'
+		// );
 
-		wp_nav_menu($defaults);
+		// wp_nav_menu($defaults);
 
 	?>
 

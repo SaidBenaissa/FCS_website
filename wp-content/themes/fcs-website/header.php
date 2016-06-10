@@ -88,13 +88,13 @@
 			
 			<?php
 	
-				$defaults = array(
-					'container' => false,
-					'theme_location' => 'header-top-menu',
-					'menu_class' => 'main-menu'
-				);
+				// $defaults = array(
+				// 	'container' => false,
+				// 	'theme_location' => 'header-top-menu',
+				// 	'menu_class' => 'main-menu'
+				// );
 	
-				wp_nav_menu($defaults);
+				// wp_nav_menu($defaults);
 
 			?>
 

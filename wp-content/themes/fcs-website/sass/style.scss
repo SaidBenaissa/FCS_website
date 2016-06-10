@@ -332,9 +332,9 @@ ul.sub-menu a {
 
 .header-menus-mob-wrap {
 	display: none;
-    padding-top: 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
 }
 
 .mob-menu.menu-1 {
@@ -429,10 +429,10 @@ h5 {
 }
 
 .page-content {
-    width: 80%;
-    min-height: 100%;
-    margin: auto;
-    position: relative;
+  width: 80%;
+  min-height: 100%;
+  margin: auto;
+  position: relative;
 }
 
 /* .with-side-menu class is added via script.js */
@@ -446,6 +446,22 @@ h5 {
 body.page-template-archive-teacher .page-content p,
 body.page-template-archive-student .page-content p {
 	margin: 0;
+}
+
+body.page-id-15 .people-block {
+  padding: 0;
+  width: 15%;
+  a {
+    display: block;
+    padding: 5px;
+    font-size: 26px;
+    font-style: normal;
+    text-align: center;
+    &:before {
+      display: block;
+      font-size: 120px;
+    } 
+  }
 }
 
 .peoples-wrap {
@@ -485,14 +501,6 @@ body.page-template-archive-student .page-content p {
 .student-block img {
 	width: 100%;
 	height: auto;
-}
-
-.people-block:hover a {
-	text-decoration: underline;
-}
-
-.people-block a:hover {
-	color: #404041;
 }
 
 .people-top-wrap img {
@@ -652,9 +660,11 @@ body.single-new .page-content {
 }
 
 #googleMap {
-	width: 700px;
-	height: 216px;
-	float: right;
+  position: absolute;
+  top: 140px;
+  right: 0px;
+	width: 80%;
+	height: 196px;
 }
 
 .social-wrap {
@@ -739,10 +749,21 @@ body.single-new .page-content {
 
 @media (max-width: 1024px) {
 
+  body.page-template-page-contact .page-content .first-text {
+    margin-top: 280px;
+  }
+
 	#googleMap {
 		width: 100%;
-		margin: 20px auto 40px;
 	}
+
+}
+
+@media (min-width: 994px) {
+
+  .header-menus-mob-wrap {
+    display: none !important;
+  }
 
 }
 
@@ -810,6 +831,28 @@ body.single-new .page-content {
 	.show-side-menu-btn.sunken {
 		top: 8px;
 	}
+
+}
+
+@media (max-width: 994px) {
+
+  .people-wrap {
+    text-align: center;
+    .people-block {
+      width: 80%;
+      margin: 0 auto 20px;
+      float: none;
+    }
+  }
+
+  body.page-id-15 .people-wrap {
+    text-align: center;
+    .people-block {
+      width: 80%;
+      margin: 0 auto 20px;
+      float: none;
+    }
+  }
 
 }
 
