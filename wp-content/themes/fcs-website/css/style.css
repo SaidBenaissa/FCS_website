@@ -146,7 +146,7 @@ footer {
   margin-left: 16px; }
 
 .menu-wrap-2:nth-child(2) li.menu-item-has-children:before {
-  content: '\f100';
+  content: '\f101';
   position: absolute;
   top: 6px;
   left: 2px;
@@ -357,16 +357,19 @@ body.page-template-archive-teacher .page-content p,
 body.page-template-archive-student .page-content p {
   margin: 0; }
 
-body.page-id-15 .people-block {
+body.page-id-15 .people-block,
+body.page-id-11 .people-block {
   padding: 0;
   width: 15%; }
-  body.page-id-15 .people-block a {
+  body.page-id-15 .people-block a,
+  body.page-id-11 .people-block a {
     display: block;
     padding: 5px;
     font-size: 26px;
     font-style: normal;
     text-align: center; }
-    body.page-id-15 .people-block a:before {
+    body.page-id-15 .people-block a:before,
+    body.page-id-11 .people-block a:before {
       display: block;
       font-size: 120px; }
 
@@ -646,9 +649,11 @@ body.single-new .page-content {
       width: 80%;
       margin: 0 auto 20px;
       float: none; }
-  body.page-id-15 .people-wrap {
+  body.page-id-15 .people-wrap,
+  body.page-id-11 .people-wrap {
     text-align: center; }
-    body.page-id-15 .people-wrap .people-block {
+    body.page-id-15 .people-wrap .people-block,
+    body.page-id-11 .people-wrap .people-block {
       width: 80%;
       margin: 0 auto 20px;
       float: none; } }

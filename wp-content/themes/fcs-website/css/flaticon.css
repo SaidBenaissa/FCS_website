@@ -1,6 +1,6 @@
 /*
 Flaticon icon font: Flaticon
-Creation date: 10/06/2016 14:51
+Creation date: 12/06/2016 15:35
 */
 @font-face {
   font-family: "Flaticon";
@@ -28,35 +28,47 @@ Creation date: 10/06/2016 14:51
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
-.flaticon-down-arrow:before {
+.flaticon-application:before {
   content: "\f100"; }
 
-.flaticon-facebook-app-logo:before {
+.flaticon-down-arrow:before {
   content: "\f101"; }
 
-.flaticon-flask:before {
+.flaticon-facebook-app-logo:before {
   content: "\f102"; }
 
-.flaticon-graduate-student-avatar:before {
+.flaticon-female-graduate-student:before {
   content: "\f103"; }
 
-.flaticon-management-group:before {
+.flaticon-flask:before {
   content: "\f104"; }
 
-.flaticon-student-in-front-of-a-stack-of-books:before {
+.flaticon-graduate-showing-his-diploma:before {
   content: "\f105"; }
 
-.flaticon-teacher-pointing-blackboard:before {
+.flaticon-looking-for-students:before {
   content: "\f106"; }
 
-.flaticon-twitter-logo:before {
+.flaticon-management-group:before {
   content: "\f107"; }
 
-.flaticon-up:before {
+.flaticon-student-in-front-of-a-stack-of-books:before {
   content: "\f108"; }
 
-.flaticon-wikipedia-logo:before {
+.flaticon-student-on-computer:before {
   content: "\f109"; }
 
-.flaticon-youtube-logotype:before {
+.flaticon-teacher-pointing-blackboard:before {
   content: "\f10a"; }
+
+.flaticon-twitter-logo:before {
+  content: "\f10b"; }
+
+.flaticon-up:before {
+  content: "\f10c"; }
+
+.flaticon-wikipedia-logo:before {
+  content: "\f10d"; }
+
+.flaticon-youtube-logotype:before {
+  content: "\f10e"; }

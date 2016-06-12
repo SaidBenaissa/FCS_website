@@ -8,7 +8,7 @@
 
 	<div class="page-content">
 
-		<div class="show-side-menu-btn"></div>
+		<!-- <div class="show-side-menu-btn"></div> -->
 	
 		<?php
 
@@ -34,7 +34,7 @@
 		
 		<?php endif; ?>
 
-		<?php if( is_page('Спільнота') ) : ?>
+		<?php if( is_page(15) ) : ?>
 
 			<div class="people-wrap">
 
@@ -51,11 +51,11 @@
 				</div>
 
 				<div class="people-block">
-					<a href="<?php echo site_url(); ?>/people/alumni" class="flaticon-graduate-student-avatar fi">Випускники</a>
+					<a href="<?php echo site_url(); ?>/people/alumni" class="flaticon-graduate-showing-his-diploma fi">Випускники</a>
 				</div>
 
 				<div class="people-block">
-					<a href="<?php echo site_url(); ?>/people/studetns" class="flaticon-student-in-front-of-a-stack-of-books fi">Студенти</a>
+					<a href="<?php echo site_url(); ?>/people/students" class="flaticon-student-in-front-of-a-stack-of-books fi">Студенти</a>
 				</div>
 
 			</div>
