@@ -69,7 +69,8 @@ img {
       height: 60px;
       margin-top: -7px;
       background: #fff;
-      color: #00ADFF; }
+      color: #00ADFF;
+      font-size: 22px; }
       .contact-form-wrap .contact-form input[type='submit']:hover {
         background-color: #00ADFF;
         color: #fff; }
@@ -82,8 +83,17 @@ img {
       float: right;
       width: 50%; }
 
-div.wpcf7-response-output {
-  margin: 20px 20px; }
+div.wpcf7-response-output:not(.wpcf7-mail-sent-ok) {
+  margin: -5px 20px 20px; }
+
+.wpcf7-not-valid-tip {
+  display: none !important; }
+
+form.invalid input.wpcf7-not-valid {
+  background: #f0e3e3; }
+
+form.wpcf7-form.invalid .contact-form-wrap {
+  display: block; }
 
 header {
   margin-bottom: 20px;
@@ -702,6 +712,19 @@ body.single-new .page-content {
   .footer-text-wrap {
     float: none;
     margin: auto; } }
+
+@media (max-width: 736px) {
+  .contact-form-wrap .contact-form .forms-wrap-1,
+  .contact-form-wrap .contact-form .forms-wrap-2 {
+    width: 100%; }
+    .contact-form-wrap .contact-form .forms-wrap-1 input[type='text'],
+    .contact-form-wrap .contact-form .forms-wrap-1 input[type='email'],
+    .contact-form-wrap .contact-form .forms-wrap-2 input[type='text'],
+    .contact-form-wrap .contact-form .forms-wrap-2 input[type='email'] {
+      border-right: 2px solid #00ADFF; }
+    .contact-form-wrap .contact-form .forms-wrap-1 textarea,
+    .contact-form-wrap .contact-form .forms-wrap-2 textarea {
+      border-top: none; } }
 
 @media (max-width: 580px) {
   .teachers-3-wrap {
