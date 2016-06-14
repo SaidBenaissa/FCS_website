@@ -10,15 +10,15 @@ body {
 
 body {
 	font-family: 'Open Sans Condensed', sans-serif;
-    color: $black;
+  color: $black;
 	font-size: 20px;
 	position: relative;
 }
 
 a {
-    color: $black;
-    text-decoration: none;
-    transition: all 0.2s;
+  color: $black;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
 .logo-wraps a {
@@ -26,8 +26,8 @@ a {
 }
 
 a:hover {
-    color: $blue;
-    text-decoration: none;
+  color: $blue;
+  text-decoration: none;
 }
 
 img {
@@ -35,7 +35,8 @@ img {
 }
 
 #contact-us-btn {
-  display: none;
+  float: right;
+  margin-right: 10px;
 }
 
 .contact-form-wrap {
@@ -43,14 +44,38 @@ img {
 	padding: 20px 0;
 	text-align: center;
 	.contact-form {
+    width: 86%;
 		display: inline-block;
+    ::-webkit-input-placeholder {
+       color: #ccc;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+       color: #ccc;  
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: #ccc;  
+    }
+    :-ms-input-placeholder {  
+       color: #ccc;  
+    }
 		input, textarea {
 			width: 100%;
-			border: 1px solid $blue;
+			border: 2px solid $blue;
+      padding: 5px;
 			box-sizing: border-box;
+      outline: none;
+      color: $blue;
+      cursor: pointer;
+      font: 18px 'Open Sans Condensed', sans-serif;
+      font-weight: bold;
+      &:hover {
+        background-color: rgba(0, 137, 255, 0.25);
+      }
 		}
 		textarea {
 			height: 121px;
+      resize: none;
+      border-bottom: 1px solid;
 		}
 		input {
 			&[type='text'], &[type='email'] {
@@ -60,10 +85,17 @@ img {
 			&[type='submit'] {
 				height: 60px;
 				margin-top: -7px;
+        background: #fff;
+        color: $blue;
+        &:hover {
+          background-color: $blue;
+          color: #fff;
+        }
 			}
 		}
 		.forms-wrap-1 {
 			float: left;
+      width: 50%;
 			span:not(:last-child) {
 				input {
 					border-bottom: none;
@@ -72,14 +104,19 @@ img {
 		}
 		.forms-wrap-2 {
 			float: right;
+      width: 50%;
 		}
 	}
+}
+
+div.wpcf7-response-output {
+  margin: 20px 20px;
 }
 
 header {
 	margin-bottom: 20px;
 	padding-top: 10px;
-    border-bottom: 1px solid;
+  border-bottom: 1px solid;
 	position: relative;
 	z-index: 100;
 	background: #F0FAFF;
@@ -96,7 +133,7 @@ header {
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
   cursor: pointer;
-  z-index: 10;
+  z-index: 100;
   &:hover {
     opacity: 1;
   }
@@ -386,7 +423,7 @@ a.logo {
 }
 
 a.logo.naukma-logo {
-	height: 46.5px;
+	height: 47px;
 	background: url(../../img/naukma-logo.png) left center no-repeat;
 	background-size: cover;
 }

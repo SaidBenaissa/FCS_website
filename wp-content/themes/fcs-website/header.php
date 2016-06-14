@@ -12,6 +12,8 @@
 <body <?php body_class(); ?>>
 
 	<?php echo do_shortcode( '[contact-form-7 id="821" title="Contact form"]' ); ?>
+
+	<div class="send-output"></div>
 	
 	<header>
 
@@ -40,6 +42,8 @@
 
 				<?php echo get_search_form(); ?>
 
+				<button id="contact-us-btn">Написати нам</button>
+
 			</div>
 
 			<div class="menu-wrap-2">
@@ -65,8 +69,6 @@
 					wp_nav_menu($defaults);
 		
 				?>
-
-				<button id="contact-us-btn">Написати нам</button>
 
 			</div>
 

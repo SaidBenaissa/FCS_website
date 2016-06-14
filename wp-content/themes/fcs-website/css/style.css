@@ -26,32 +26,64 @@ img {
   max-width: 100%; }
 
 #contact-us-btn {
-  display: none; }
+  float: right;
+  margin-right: 10px; }
 
 .contact-form-wrap {
   display: none;
   padding: 20px 0;
   text-align: center; }
   .contact-form-wrap .contact-form {
+    width: 86%;
     display: inline-block; }
+    .contact-form-wrap .contact-form ::-webkit-input-placeholder {
+      color: #ccc; }
+    .contact-form-wrap .contact-form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #ccc; }
+    .contact-form-wrap .contact-form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #ccc; }
+    .contact-form-wrap .contact-form :-ms-input-placeholder {
+      color: #ccc; }
     .contact-form-wrap .contact-form input, .contact-form-wrap .contact-form textarea {
       width: 100%;
-      border: 1px solid #00ADFF;
-      box-sizing: border-box; }
+      border: 2px solid #00ADFF;
+      padding: 5px;
+      box-sizing: border-box;
+      outline: none;
+      color: #00ADFF;
+      cursor: pointer;
+      font: 18px 'Open Sans Condensed', sans-serif;
+      font-weight: bold; }
+      .contact-form-wrap .contact-form input:hover, .contact-form-wrap .contact-form textarea:hover {
+        background-color: rgba(0, 137, 255, 0.25); }
     .contact-form-wrap .contact-form textarea {
-      height: 121px; }
+      height: 121px;
+      resize: none;
+      border-bottom: 1px solid; }
     .contact-form-wrap .contact-form input[type='text'], .contact-form-wrap .contact-form input[type='email'] {
       height: 60px;
       border-right: none; }
     .contact-form-wrap .contact-form input[type='submit'] {
       height: 60px;
-      margin-top: -7px; }
+      margin-top: -7px;
+      background: #fff;
+      color: #00ADFF; }
+      .contact-form-wrap .contact-form input[type='submit']:hover {
+        background-color: #00ADFF;
+        color: #fff; }
     .contact-form-wrap .contact-form .forms-wrap-1 {
-      float: left; }
+      float: left;
+      width: 50%; }
       .contact-form-wrap .contact-form .forms-wrap-1 span:not(:last-child) input {
         border-bottom: none; }
     .contact-form-wrap .contact-form .forms-wrap-2 {
-      float: right; }
+      float: right;
+      width: 50%; }
+
+div.wpcf7-response-output {
+  margin: 20px 20px; }
 
 header {
   margin-bottom: 20px;
@@ -70,7 +102,7 @@ header {
   opacity: 0.5;
   transition: opacity 0.5s;
   cursor: pointer;
-  z-index: 10; }
+  z-index: 100; }
   .up:hover {
     opacity: 1; }
 
@@ -306,7 +338,7 @@ a.logo {
   color: #fff; }
 
 a.logo.naukma-logo {
-  height: 46.5px;
+  height: 47px;
   background: url(../../img/naukma-logo.png) left center no-repeat;
   background-size: cover; }
 

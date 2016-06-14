@@ -8,19 +8,23 @@
 
 	<div class="page-content">
 
-		<!-- <div class="show-side-menu-btn"></div> -->
-	
-		<?php
+		<?php if( !is_page(11) ) : ?>
 
-			// $defaults = array(
-			// 	'container' => false,
-			// 	'theme_location' => 'resources-page-side-menu',
-			// 	'menu_class' => 'side-menu'
-			// );
+			<div class="show-side-menu-btn"></div>
+		
+			<?php
 
-			// wp_nav_menu($defaults);
+				$defaults = array(
+					'container' => false,
+					'theme_location' => 'resources-page-side-menu',
+					'menu_class' => 'side-menu'
+				);
 
-		?>
+				wp_nav_menu($defaults);
+
+			?>
+
+		<?php endif; ?>
 
  		<?php
 
