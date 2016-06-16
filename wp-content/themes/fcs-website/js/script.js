@@ -18,16 +18,6 @@ jQuery(document).ready(function($) {
     return false;    
   });
 
-  $('.menu-wrap li.menu-item-has-children').mouseenter(function() {
-    $(this).children('ul.sub-menu').slideDown('0.2');
-   }).mouseleave(function() {
-    $(this).children('ul.sub-menu').slideUp('0.2');
-  });
-
-  $('ul.sub-menu').mouseenter(function() {
-    $(this).css('display', 'block');
-  });
-
   $('.show-menu-wrap p, .show-menu').click(function() {
     $('.header-menus-mob-wrap').slideToggle('0.5');
   });

@@ -33,16 +33,12 @@
 
 				?>
 
-				<div class="social-wrap">
+				<!-- <div class="social-wrap">
 					<a class="flaticon-facebook-app-logo fi icon icon-fb" href="https://www.facebook.com/mohylanka/"></a>
 					<a class="flaticon-twitter-logo fi icon icon-twitter" href="https://twitter.com"></a>
 					<a class="flaticon-youtube-logotype fi icon icon-youtube" href="https://www.youtube.com/channel/UC3znl1NwCry9LxDf0z-DVKA"></a>
 					<a class="flaticon-wikipedia-logo icon fi icon-wiki" href="https://uk.wikipedia.org/wiki/Національний_університет_«Києво-Могилянська_академія»"></a>
-				</div>
-
-				<?php echo get_search_form(); ?>
-
-				<button id="contact-us-btn">Написати нам</button>
+				</div> -->
 
 			</div>
 
@@ -69,6 +65,10 @@
 					wp_nav_menu($defaults);
 		
 				?>
+
+				<?php echo get_search_form(); ?>
+
+				<button id="contact-us-btn">Написати нам</button>
 
 			</div>
 
