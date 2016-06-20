@@ -7,8 +7,16 @@ jQuery(document).ready(function($) {
 
   $('.page-content').has('ul.side-menu').addClass('with-side-menu');
 
-  $('#contact-us-btn').click(function() {
-    $('.contact-form-wrap').slideToggle('0.2');
+  $('#contact-us-btn:not(.sunken)').click(function() {
+    $('.contact-form-wrap').slideToggle(200);
+    $('header').animate( { top: '+=226px' }, 200);
+    $('#contact-us-btn').addClass('sunken');
+  });
+
+  $('#contact-us-btn.sunken').click(function() {
+    $('.contact-form-wrap').slideToggle(200);
+    $('header').animate( { top: '-=226px' }, 200);
+    $('#contact-us-btn').removeClass('sunken');
   });
 
   $('.up').click(function() {

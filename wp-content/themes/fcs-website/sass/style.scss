@@ -1,5 +1,6 @@
 $black: #404041;
 $blue: #00ADFF;
+$font: 'Arial';
 
 html,
 body {
@@ -9,9 +10,8 @@ body {
 }
 
 body {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font: 20px $font;
   color: $black;
-	font-size: 20px;
 	position: relative;
 }
 
@@ -37,15 +37,15 @@ img {
 #contact-us-btn {
   float: right;
   margin-right: 10px;
-  margin-top: 12px;
+  margin-top: 8px;
   background: none;
   outline: none;
   border: none;
   cursor: pointer;
   border: 1px solid #fff;
   border-radius: 0;
-  padding: 4px;
-  font: 18px 'Open Sans Condensed', sans-serif;
+  padding: 10px 4px;
+  font: 14px $font;
   &:hover {
       background-color: rgb(0, 231, 255);
   }
@@ -78,7 +78,7 @@ img {
       outline: none;
       color: $blue;
       cursor: pointer;
-      font: 18px 'Open Sans Condensed', sans-serif;
+      font: 14px $font;
       font-weight: bold;
       &:hover {
         background-color: rgba(0, 137, 255, 0.25);
@@ -96,7 +96,7 @@ img {
 			}
 			&[type='submit'] {
 				height: 60px;
-				margin-top: -7px;
+				margin-top: -6px;
         background: #fff;
         color: $blue;
         font-size: 22px;
@@ -145,13 +145,19 @@ form.wpcf7-form.invalid .contact-form-wrap {
 
 header {
   width: 100%;
+  height: 52px;
   position: fixed;
+  top: 0;
 	margin-bottom: 20px;
   border-bottom: 1px solid;
 	z-index: 100;
 	background: $blue;
 	text-align: center;
   line-height: 52px;
+}
+
+body.logged-in header {
+  top: 32px;
 }
 
 .up {
@@ -171,7 +177,7 @@ header {
 }
 
 footer {
-	margin: 50px 0 -30px;
+	margin: 70px 0 -30px;
   padding: 6px 0;
   border-top: 1px solid #404041;
 	background: #EFFFEF;
@@ -236,7 +242,7 @@ footer {
 .menu-wrap-2:nth-child(2) ul.main-menu {
 	width: 62%;
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 11px;
   height: 52px;
   li:first-child ul.sub-menu {
     width: 130px;
@@ -321,11 +327,16 @@ ul:not(.side-menu) ul.sub-menu a {
 }
 
 ul.sub-menu li {
-    display: block;
+  display: block;
+  height: auto;
+  line-height: 30px;
+  &:not(:last-child) {
+    border-bottom: 1px solid;
+  }
 }
 
 ul.sub-menu a {
-	font-size: 15px;
+	font-size: 11px;
 }
 
 .menu-wrap-2:nth-child(2) ul {
@@ -349,10 +360,10 @@ ul.sub-menu a {
 }
 
 .menu-wrap-2 form.searchform input[type="text"] {
-    width: 120px;
+    width: 100px;
     height: 26px;
     vertical-align: middle;
-    font: 18px 'Open Sans Condensed', sans-serif;
+    font: 14px $font;
     border: 2px solid #fff;
     padding: 5px;
     box-sizing: border-box;
@@ -394,7 +405,7 @@ ul.sub-menu a {
 .menu-wrap-2 form.searchform input[type="submit"] {
 	height: 26px;
   line-height: 100%;
-  font: 18px 'Open Sans Condensed', sans-serif;
+  font: 14px $font;
 	padding-top: 0;
   background: none;
   outline: none;
@@ -409,7 +420,10 @@ ul.sub-menu a {
 
 .show-menu-wrap {
 	display: none;
-	margin-bottom: 20px;
+	margin: 52px 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 .show-menu-wrap p {
@@ -424,11 +438,11 @@ ul.sub-menu a {
 .show-menu {
 	width: 0;
 	height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 30px solid #00ADFF;
-    margin: auto;
-    cursor: pointer;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #00ADFF;
+  margin: auto;
+  cursor: pointer;
 }
 
 .header-menus-mob-wrap {
@@ -436,6 +450,7 @@ ul.sub-menu a {
   padding-top: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid;
+  padding-top: 120px;
 }
 
 .mob-menu.menu-1 {
@@ -444,7 +459,10 @@ ul.sub-menu a {
 }
 
 .mob-menu.menu-2 {
-	padding-left: 20px;
+	padding: 0 0 20px 20px;
+  ul {
+    padding: 0;
+  }
 }
 
 .mob-menu.menu-2 li {
@@ -478,7 +496,6 @@ footer .logo-wraps {
 
 a.logo {
   display: inline-block;
-  width: 28px;
   margin: 0;
   float: left;
   font-size: 60px;
@@ -487,15 +504,18 @@ a.logo {
 }
 
 a.logo.naukma-logo {
+  width: 28px;
 	height: 27px;
 	background: url(../../img/naukma-logo.png) left center no-repeat;
 	background-size: cover;
 }
 
 a.logo.fcs-logo {
-  height: 30px;
-	background: url(../../img/fcs-logo.png) right center no-repeat;
+  width: 30px;
+  height: 42px;
+	background: url(../../img/logo.jpg) center center no-repeat;
 	background-size: cover;
+  margin-top: -6px;
 }
 
 a.logo.footer-logo {
@@ -555,11 +575,11 @@ body.page-template-archive-student .page-content p {
 body.page-id-15 .people-block,
 body.page-id-11 .people-block {
   padding: 0;
-  width: 15%;
+  width: 17%;
   a {
     display: block;
     padding: 5px;
-    font-size: 26px;
+    font-size: 20px;
     font-style: normal;
     text-align: center;
     &:before {
@@ -685,6 +705,9 @@ ul.side-menu {
   padding-top: 90px;
   padding-right: 30px;
   z-index: 10;
+  ul.sub-menu li {
+    border-bottom: none;
+  }
 }
 
 ul.side-menu li.current-menu-item>a {
@@ -884,6 +907,10 @@ body.single-new .page-content {
 
 @media (max-width: 1024px) {
 
+  ul.sub-menu li:not(:last-child) {
+    border-bottom: none;
+  }
+
   body.page-template-page-contact .page-content .first-text {
     margin-top: 280px;
   }
@@ -891,6 +918,77 @@ body.single-new .page-content {
 	#googleMap {
 		width: 100%;
 	}
+
+  header {
+    margin-bottom: 0;
+  }
+
+  .show-menu-wrap {
+    display: block;
+  }
+
+  .menu-wrap-2 ul.main-menu {
+    display: none;
+  }
+
+  .menu-wrap-2:first-child {
+    // padding-top: 14px;
+  }
+
+  header .logo-wraps {
+    margin: 0 auto;
+    float: none;
+  }
+
+  body.page-template-page-about .page-content,
+  body.page-template-archive-teacher .page-content,
+  body.single-teacher .page-content,
+  .page-content.with-side-menu {
+      width: 86%;
+      margin-left: 0;
+      margin: auto;
+    }
+
+  ul.side-menu {
+    display: none;
+    position: absolute;
+    height: auto;
+    left: -6%;
+    top: 0;
+    padding: 0 10px;
+    background-color: rgb(76, 76, 76);
+    background-color: rgba(76, 76, 76, 0.82);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  ul.side-menu.sunken {
+    top: 20px;
+  }
+
+  ul.side-menu li:not(.current-menu-item):not(.current-menu-ancestor)>a {
+    color: #fff;
+  }
+
+  .show-side-menu-btn {
+    display: block;
+  }
+
+  .show-side-menu-btn.sunken {
+    top: 8px;
+  }
+
+  .menu-wrap-2 form.searchform {
+    margin-top: -46px;
+    margin-left: 20px;
+  }
+
+  .news-block, .page-content {
+    top: 140px;
+  }
 
 }
 
@@ -903,73 +1001,6 @@ body.single-new .page-content {
   ul.side-menu {
     display: block !important;
   }
-
-}
-
-@media (max-width: 994px) {
-
-	header {
-		margin-bottom: 0;
-	}
-
-	.show-menu-wrap {
-		display: block;
-	}
-
-	.menu-wrap-2 ul.main-menu {
-		display: none;
-	}
-
-	.menu-wrap-2:first-child {
-		padding-top: 14px;
-	}
-
-	header .logo-wraps {
-		margin: auto;
-		margin-top: 14px;
-		float: none;
-	}
-
-	body.page-template-page-about .page-content,
-	body.page-template-archive-teacher .page-content,
-	body.single-teacher .page-content,
-	.page-content.with-side-menu {
-    	width: 86%;
-    	margin-left: 0;
-    	margin: auto;
-    }
-
-	ul.side-menu {
-		display: none;
-	    position: absolute;
-	    height: auto;
-	    left: -6%;
-		top: 0;
-		padding: 0 10px;
-		background-color: rgb(76, 76, 76);
-		background-color: rgba(76, 76, 76, 0.82);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
-	}
-
-	ul.side-menu.sunken {
-		top: 20px;
-	}
-
-	ul.side-menu li:not(.current-menu-item):not(.current-menu-ancestor)>a {
-		color: #fff;
-	}
-
-	.show-side-menu-btn {
-		display: block;
-	}
-
-	.show-side-menu-btn.sunken {
-		top: 8px;
-	}
 
 }
 
@@ -991,6 +1022,9 @@ body.single-new .page-content {
       width: 80%;
       margin: 0 auto 20px;
       float: none;
+      a {
+        font-size: 28px;
+      }
     }
   }
 
