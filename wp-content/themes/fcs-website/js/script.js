@@ -7,16 +7,18 @@ jQuery(document).ready(function($) {
 
   $('.page-content').has('ul.side-menu').addClass('with-side-menu');
 
-  $('#contact-us-btn:not(.sunken)').click(function() {
+  $('#contact-us-btn').click(function() {
     $('.contact-form-wrap').slideToggle(200);
-    $('header').animate( { top: '+=226px' }, 200);
-    $('#contact-us-btn').addClass('sunken');
-  });
-
-  $('#contact-us-btn.sunken').click(function() {
-    $('.contact-form-wrap').slideToggle(200);
-    $('header').animate( { top: '-=226px' }, 200);
-    $('#contact-us-btn').removeClass('sunken');
+    if( $('#contact-us-btn').hasClass('not-clicked') ) {
+      $('header').animate( { top: '+=226px' }, 200);
+      $('#contact-us-btn').removeClass('not-clicked');
+      $('#contact-us-btn').addClass('clicked');
+    }
+    else {
+      $('header').animate( { top: '-=226px' }, 200);
+      $('#contact-us-btn').removeClass('clicked');
+      $('#contact-us-btn').addClass('not-clicked');
+    }
   });
 
   $('.up').click(function() {

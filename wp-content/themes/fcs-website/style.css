@@ -9,6 +9,5 @@ Version: 1.0;
 /*
 All the styles for editing are in the sass folder and rendered via gulp, all the styles for production in the css folder
 */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans&subset=cyrillic,cyrillic-ext);
 @import url(css/prod/main.min.css);

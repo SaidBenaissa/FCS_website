@@ -5,7 +5,7 @@ body {
   height: 100%; }
 
 body {
-  font: 20px "Arial";
+  font: 20px "Fira Sans", sans-serif;
   color: #404041;
   position: relative; }
 
@@ -34,8 +34,8 @@ img {
   cursor: pointer;
   border: 1px solid #fff;
   border-radius: 0;
-  padding: 10px 4px;
-  font: 14px "Arial"; }
+  padding: 10px 4px 7px;
+  font: 14px "Fira Sans", sans-serif; }
   #contact-us-btn:hover {
     background-color: #00e7ff; }
 
@@ -64,7 +64,7 @@ img {
       outline: none;
       color: #00ADFF;
       cursor: pointer;
-      font: 14px "Arial";
+      font: 14px "Fira Sans", sans-serif;
       font-weight: bold; }
       .contact-form-wrap .contact-form input:hover, .contact-form-wrap .contact-form textarea:hover {
         background-color: rgba(0, 137, 255, 0.25); }
@@ -191,7 +191,7 @@ footer {
 .menu-wrap-2:nth-child(2) ul.main-menu {
   width: 62%;
   padding-left: 10px;
-  font-size: 11px;
+  font-size: 12px;
   height: 52px; }
   .menu-wrap-2:nth-child(2) ul.main-menu li:first-child ul.sub-menu {
     width: 130px; }
@@ -284,10 +284,10 @@ ul.sub-menu a {
   display: none; }
 
 .menu-wrap-2 form.searchform input[type="text"] {
-  width: 100px;
+  width: 120px;
   height: 26px;
   vertical-align: middle;
-  font: 14px "Arial";
+  font: 14px "Fira Sans", sans-serif;
   border: 2px solid #fff;
   padding: 5px;
   box-sizing: border-box;
@@ -322,8 +322,8 @@ ul.sub-menu a {
 
 .menu-wrap-2 form.searchform input[type="submit"] {
   height: 26px;
-  line-height: 100%;
-  font: 14px "Arial";
+  line-height: 22px;
+  font: 14px "Fira Sans", sans-serif;
   padding-top: 0;
   background: none;
   outline: none;
@@ -829,3 +829,16 @@ body.single-new .page-content {
   .news-piece-block.normal,
   .news-piece-block.wide {
     width: 86%; } }
+
+@media (max-width: 480px) {
+  .menu-wrap-2 form.searchform input[type=text] {
+    width: 70px;
+    font-size: 12px; }
+  .menu-wrap-2 form.searchform input[type=submit] {
+    font-size: 10px; }
+  .menu-wrap-2 form.searchform {
+    margin-left: 10px; }
+  #contact-us-btn {
+    margin-top: 14px;
+    padding: 6px 2px 7px;
+    font-size: 10px; } }

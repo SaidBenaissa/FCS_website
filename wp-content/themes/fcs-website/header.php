@@ -68,7 +68,7 @@
 
 				<?php echo get_search_form(); ?>
 
-				<button id="contact-us-btn">Написати нам</button>
+				<button id="contact-us-btn" class="not-clicked">Написати нам</button>
 
 			</div>
 

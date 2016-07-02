@@ -1,6 +1,6 @@
 $black: #404041;
 $blue: #00ADFF;
-$font: 'Arial';
+$font: 'Fira Sans', sans-serif;
 
 html,
 body {
@@ -44,7 +44,7 @@ img {
   cursor: pointer;
   border: 1px solid #fff;
   border-radius: 0;
-  padding: 10px 4px;
+  padding: 10px 4px 7px;
   font: 14px $font;
   &:hover {
       background-color: rgb(0, 231, 255);
@@ -242,7 +242,7 @@ footer {
 .menu-wrap-2:nth-child(2) ul.main-menu {
 	width: 62%;
   padding-left: 10px;
-  font-size: 11px;
+  font-size: 12px;
   height: 52px;
   li:first-child ul.sub-menu {
     width: 130px;
@@ -360,7 +360,7 @@ ul.sub-menu a {
 }
 
 .menu-wrap-2 form.searchform input[type="text"] {
-    width: 100px;
+    width: 120px;
     height: 26px;
     vertical-align: middle;
     font: 14px $font;
@@ -404,7 +404,7 @@ ul.sub-menu a {
 
 .menu-wrap-2 form.searchform input[type="submit"] {
 	height: 26px;
-  line-height: 100%;
+  line-height: 22px;
   font: 14px $font;
 	padding-top: 0;
   background: none;
@@ -1095,5 +1095,28 @@ body.single-new .page-content {
 	.news-piece-block.wide {
 		width: 86%;
 	}
+
+}
+
+@media (max-width: 480px) {
+
+  .menu-wrap-2 form.searchform input[type=text] {
+    width: 70px;
+    font-size: 12px;
+  }
+
+  .menu-wrap-2 form.searchform input[type=submit] {
+    font-size: 10px;
+  }
+
+  .menu-wrap-2 form.searchform {
+    margin-left: 10px;
+  }
+
+  #contact-us-btn {
+    margin-top: 14px;
+    padding: 6px 2px 7px;
+    font-size: 10px;
+  }
 
 }
