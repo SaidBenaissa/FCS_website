@@ -322,9 +322,8 @@ ul.sub-menu a {
 
 .menu-wrap-2 form.searchform input[type="submit"] {
   height: 26px;
-  line-height: 22px;
   font: 14px "Fira Sans", sans-serif;
-  padding-top: 0;
+  padding-top: 2px;
   background: none;
   outline: none;
   border: none;
@@ -636,10 +635,10 @@ body.single-new .page-content {
 
 #googleMap {
   position: absolute;
-  top: 140px;
+  top: 110px;
   right: 0px;
   width: 60%;
-  height: 196px; }
+  height: 166px; }
 
 .social-wrap {
   display: inline-block;
