@@ -303,6 +303,12 @@ ul.sub-menu li:before {
 	display: none;
 }
 
+#menu-contact-page-side-menu {
+  li:not(:first-child):not(:nth-child(2)) {
+    display: none;
+  }
+}
+
 ul:not(.side-menu) ul.sub-menu {
     display: none;
     position: absolute;
